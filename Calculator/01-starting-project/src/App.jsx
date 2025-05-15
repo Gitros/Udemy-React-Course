@@ -1,7 +1,15 @@
+import { useState } from "react";
+import CalculatorBox from "./components/CalculatorBox";
+import InvestmentResults from "./components/InvestmentResults";
+
 function App() {
+  const [value, setValue] = useState();
   return (
-    <h1>React Investment Calculator</h1>
-  )
+    <>
+      <CalculatorBox />
+      <InvestmentResults />
+    </>
+  );
 }
 
-export default App
+export default App;
